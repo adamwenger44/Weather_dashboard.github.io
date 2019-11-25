@@ -10,7 +10,7 @@ function searchCities(city) {
     }).then(function (response) {
         console.log(response)
         console.log(queryURL)
-        var iconURL = "http://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png"
+        var iconURL = "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png"
         $.ajax({
             url: iconURL,
             method: "GET"
