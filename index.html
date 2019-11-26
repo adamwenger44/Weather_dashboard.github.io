@@ -4,32 +4,37 @@
 <head>
     <meta charset="utf-8">
     <title>Weather Dashboard</title>
-
+    <!-- making the page the same across all browsers by normalizing -->
     <link href="./css/normalize.css" rel="stylesheet">
+    <!-- adding some css to elements on the page -->
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- header on top of the page -->
     <h1>Weather Dashboard</h1>
-
+    <!-- using rows and colomns to organize elements where i want them -->
     <div class="row">
         <div class="col-md-3" id="grey">
             <div class="row">
+                <!-- header inside grey box -->
                 <div class="col-md-12">
                     <h2>Search For a City:</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
+                    <!-- where user can type city name into -->
                     <input type="text" placeholder="city name..." id="cityName">
+                    <!-- button to click to load results -->
                     <button id="search" class="btnSearch">search</button>
                 </div>
             </div>
         </div>
         <div class="col-md-9" id="results"></div>
-        
-    </div>
 
+    </div>
+    <!-- linking jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./jQ/script.js"></script>
 </body>
