@@ -35,7 +35,7 @@ function searchCities(city) {
             cityName.css("font-size", "25px")
             // creating div for temperature, calling the variable above that turned it into farenheight
             var cityTemp = $("<div>").text("Temperature: " + tempF + "*F")
-            creating div for humidity
+            // creating div for humidity
             var cityHumidity = $("<div>").text("Humidity: " + response.main.humidity + "%")
             // creating div for wind speed
             var cityWind = $("<div>").text("Wind Speed: " + response.wind.speed + " mph")
